@@ -1,52 +1,43 @@
-## Fortnite QA Automation  
+## Epic Games Data Pipeline  
 
-Automated testing framework for Fortnite game mechanics and UI validation. This repository contains test scripts for game functionality, network stability, and API interactions.
+Data analytics and machine learning pipeline for player behavior analysis in Epic Games. This project processes player statistics, game telemetry, and in-game events to generate predictive insights.
 
 ### Features  
-- Automated UI testing with Selenium WebDriver  
-- API interaction and validation using REST Assured  
-- Performance monitoring through in-game telemetry analysis  
-- CI/CD pipeline for test execution with GitHub Actions  
+- Real-time data ingestion and preprocessing  
+- Machine learning models for player behavior prediction  
+- Game telemetry processing with Apache Spark  
+- Interactive data visualization with Jupyter Notebooks  
 
 ### Technologies  
 - **Python 3.9+**  
-- **Selenium WebDriver**  
-- **pytest**  
-- **REST Assured (API Testing)**  
-- **Docker (optional for headless execution)**  
+- **Pandas, NumPy**  
+- **Scikit-Learn**  
+- **Apache Spark**  
+- **Jupyter Notebooks**  
 
 ### Folder Structure  
 ```
-/fortnite-qa-automation
-    ├── tests/             # Automated test scripts
-    ├── configs/           # Test environment configurations
-    ├── reports/           # Test execution reports
-    ├── logs/              # Execution logs for debugging
-    ├── requirements.txt   # Dependencies
-    ├── README.md          # Documentation
+/epicgames-data-pipeline
+    ├── data/            # Raw and processed datasets
+    ├── models/          # Trained ML models
+    ├── notebooks/       # Jupyter Notebooks for analysis
+    ├── scripts/         # Data preprocessing and ML scripts
+    ├── README.md        # Documentation
 ```
 
 ### Setup & Execution  
 1. Clone the repository  
    ```bash  
-   git clone https://github.com/thomas-sdet-qa-test/fortnite-qa-automation.git  
+   git clone https://github.com/thomas-sdet-qa-test/epicgames-data-pipeline.git  
    ```  
 2. Install dependencies  
    ```bash  
    pip install -r requirements.txt  
    ```  
-3. Run UI tests  
+3. Run data preprocessing  
    ```bash  
-   pytest tests/ui_tests/  
+   python scripts/data_preprocessing.py  
    ```  
-4. Run API tests  
-   ```bash  
-   pytest tests/api_tests/  
-   ```  
-
-### Notes  
-- Ensure ChromeDriver is installed for Selenium tests.  
-- API tests require valid authentication tokens.  
 
 ### Contribution  
 Pull requests are welcome.
